@@ -1,6 +1,6 @@
 # WebCripplingData
 
-This resposityr contains web crippling test data for cold-formed steel members.
+This respository contains web crippling test data for cold-formed steel members.
 
 ## Data structure
 
