@@ -12,6 +12,7 @@ The main data file is [web_crippling_data.json](data/web_crippling_data.json).
 * author_name_2
 * specimen_name
 * cross_section_type
+* loading_condition
 * t
 * D1
 * D2
