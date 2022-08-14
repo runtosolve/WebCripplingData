@@ -12,16 +12,16 @@ Data = CSV.File(open(read, "src/Beshara_2000/Beshara_2000.csv")) |> DataFrame
 units = []
 for i = 1:nrow(Data)
 
-    units = vcat(units, [[[], [], [], [], [], [], [], "mm", "mm", "mm", "mm", "mm", "mm", "mm", "MPa", "MPa"]])
+    units = vcat(units, [[[], [], [], [], [], [], [], "mm", "mm", "mm", "mm", "mm", "mm", "mm", "MPa", "KN"]])
 
 end
 
-insertcols!(Data, 5, :units => units)
+insertcols!(Data, 17, :units => units)
 
 all_data_json = [OrderedDict(d[1] => d[2] for d in zip(names(Data), Data[item, :]))  for item in 1:size(Data)[1]]
 stringdata = JSON.json(all_data_json, 4)
-open("write_read.json", "w") do f
+open("/Users/zhoushangqun/Documents/dev/WebCripplingData/src/Beshara_2000/Beshara_2000.json", "w") do f
     write(f, stringdata)
- end
+end
  
 
