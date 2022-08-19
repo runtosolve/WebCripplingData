@@ -2,7 +2,7 @@
 
 This respository contains web crippling test data for cold-formed steel members.
 
-The main data file is [Combined_Data.json](data/Combined_Data.json).
+The main data file is [web_crippling_data.json](data/web_crippling_data.json).
 
 ## Data structure
 
