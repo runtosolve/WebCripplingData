@@ -17,6 +17,6 @@ insertcols!(combined_Data, 17, :units => units)
 
 all_data_json = [OrderedDict(d[1] => d[2] for d in zip(names(combined_Data), combined_Data[item, :]))  for item in 1:size(combined_Data)[1]]
 stringdata = JSON.json(all_data_json, 4)
-open("data/Combined_Data.json", "w") do f
+open("data/web_crippling_data.json", "w") do f
     write(f, stringdata)
 end
