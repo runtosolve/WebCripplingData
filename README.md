@@ -14,13 +14,10 @@ The main data file is [web_crippling_data.json](data/web_crippling_data.json).
 * cross_section_type
 * loading_condition
 * t
-* D1
-* D2
+* D
 * r
-* B1
-* B2
-* d1
-* d2
+* B
+* d
 * L
 * n
 * fy 
@@ -39,7 +36,7 @@ Import the data into a DataFrame so that you can use it.
 ```julia
 # turn a json string source into a DataFrame
 
-filename = the path of json file you download from Github
+filename = "the path of json file you download from Github"
 using DataFrames, JSON3, JSONTables
 json_string = read(filename, String)
 json_source = JSON3.read(json_string)
